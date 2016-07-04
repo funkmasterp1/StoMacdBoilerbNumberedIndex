@@ -4,8 +4,8 @@ library(quantmod)
 ## BOLINGER BANDS ##
 ####################
 
-getSymbols("YHOO", src="yahoo", from="2013-01-01")
-x <- na.omit(merge(YHOO, BBands(Cl(YHOO))))
+getSymbols("AMZN", src="yahoo", from="2013-01-01")
+x <- na.omit(merge(AMZN, BBands(Cl(YHOO))))
 
 x$sig <- NA
 
